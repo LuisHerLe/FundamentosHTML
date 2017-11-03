@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=width-device, userscalable=no">
+    <title>Reloj SVG</title>
+    <header>
+      <h1>Reloj SVG</h1>
+    </header>
+  </head>
+  <body>
+    <ol>
+      <li>Círculo</li>
+      <svg height="100" width="100" viewbox="0 0 100 100">
+        <circle cx="50" cy="50" r="20" fill="blue" stroke="red" stroke-width="1"/>
+      </svg>
+      <li>Rectángulo</li>
+      <svg width="450" height="100" viewbox="0 0 450 100">
+        <rect x="10" y="10" width="225" height="50" fill="red" stroke="blue" stroke-width="1"/>
+      </svg>
+      <li>Elipse</li>
+      <svg width="500" height="100" viewbox="0 0 500 100">
+        <ellipse cx="100" cy="50" rx="70" ry="30" fill="red" stroke="blue" stroke-width="1"/>
+      </svg>
+      <li>Línea</li>
+      <svg width="300" height="100" viewbox="0 0 300 100">
+        <line x1="0" y1="0" x2="200" y2="0" stroke=red stroke-width="2"/>
+      </svg>
+      <li>Polyline</li>
+      <svg width="300" height="200" viewbox="0 0 300 200">
+          <polyline points ="1,1 1,10, 1,100 150,200 300,100 300,10 300,0" fill="none" stroke="black" stroke-width="3"/>
+      </svg>
+      <li>Polígono</li>
+      <svg width="100" height="100" viewbox="0 0 100 100">
+        <polygon points ="50,100 50,50 50,0 0,50" fill="red" stroke="black" stroke-width="1"/>
+      </svg>
+      <li>Agrupación</li>
+      <svg width="120" height="120" viewbox="0 0 1200 1200">
+        <g>
+          <title>Prueba</title>
+          <desc>Prueba gradiente</desc>
+          <linearGradient id="Gradiente1">
+            <stop offset="20%" stop-color="#39F"/>
+            <stop offset="80%" stop-color="#AFADCD"/>
+          </linearGradient>
+        </g>
+        <rect x="100" y="100" width="250px" height="400px" fill="url(#Gradiente1)"/>
+      </svg>
+      <li>Path</li>
+      <svg width="400" height="400" viewbox="0 0 400 400">
+        <path
+          d="M 1 0 S 300 100 A 0 300 z"
+          fill="red" stroke="black" stroke-width="5">
+        </path>
+      </svg>
+
+    </ol>
+  </body>
+</html>
